@@ -1,27 +1,54 @@
-# Checkpoint2
+# 🚀 Angular Condicionais e Estruturas de Repetição
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+Este projeto foi desenvolvido com o objetivo de praticar conceitos fundamentais do Angular utilizando estruturas como `@if`, `@switch`, `@for` e o two-way data binding (`[(ngModel)]`).  
+A aplicação está dividida em exercícios simples e didáticos, cada um focado em uma funcionalidade específica.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📚 Exercícios
 
-## Code scaffolding
+### ✅ Exercicio 1 - Switch com Input Dinâmico
+Usuário digita um número correspondente ao mês e recebe o nome do mês. Exemplo prático de `@switch`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### ✅ Exercicio 2 - Lista Dinâmica com `@for`
+Renderização de lista simples com fallback utilizando `@empty`.
 
-## Build
+### ✅ Exercicio 3 - Validação de Idade
+Campo numérico que exibe "Acesso permitido" ou "Acesso negado" usando `@if` e `@else`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### ✅ Exercicio 4 - Lista de Tarefas com Ações
+Lista iterativa com botão de remoção dinâmica por item. Uso de `@for` e `click`.
 
-## Running unit tests
+### ✅ Exercicio 5 - Switch com múltiplos estados
+Seleção de status de pedido: pendente, enviado ou entregue com `@switch`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### ✅ Exercicio 6 - Percorrendo Objetos
+Exibição de usuários com nome e idade, usando `@for` em uma lista de objetos.
 
-## Running end-to-end tests
+### ✅ Exercicio 7 - Switch com número e texto
+Exercício para reforçar uso de `@switch` com diferentes tipos de valores.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### ✅ Exercicio 8 - Validação de Login e Senha
+Campos de e-mail e senha com múltiplas validações encadeadas e mensagens dinâmicas.  
+Mensagens de erro usam a classe `.required` com destaque visual.
 
-## Further help
+### ✅ Exercicio 9 - Lista de Produtos com Promoção
+Renderização condicional com `ngClass` para destacar produtos em promoção.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### ✅ Exercicio 10 - Calculadora com Switch
+Simples calculadora com operações básicas (`soma`, `subtração`, etc.) e exibição do resultado.
+
+
+## 🛠️ Tecnologias
+
+### Angular
+
+### TypeScript
+
+### HTML5 + CSS3
+
+### ngModel (Two-Way Binding)
+
+### Angular Diretivas: @if, @switch, @for, @empty
+
+
