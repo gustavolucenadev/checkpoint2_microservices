@@ -21,11 +21,9 @@
 <h2>Exercicio 2: Lista Dinâmica com for</h2>
 
 <ul>
-  <li>
     @for (item of itens; track $index) {
-      {{item}}
+      <li>{{item}}</li>
     } @empty {
-      <p>A lista está vazia!</p>
+      <li>A lista está vazia!</li>
     }
-  </li>
 </ul>

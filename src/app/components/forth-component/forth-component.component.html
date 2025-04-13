@@ -1,0 +1,83 @@
+<h2>Exercicio 7: Switch - Números e Strings</h2>
+
+
+<div>
+    <input type="number" [(ngModel)]="valor" placeholder="Digite um número">
+
+    @switch (valor) {
+    @case (1) {
+    <p>Um</p>
+    }
+    @case (2) {
+    <p>Dois</p>
+    }
+    @default {
+    <p>Valor inválido!</p>
+    }
+
+    }
+</div>
+
+
+<h2>Exercicio 8: If/Else - Validando login e senha</h2>
+
+<div>
+    <input type="text" [(ngModel)]="email" placeholder="Digite seu e-mail">
+    <input type="text" [(ngModel)]="senha" placeholder="Digite sua senha">
+
+    @if (!email || !senha) {
+        <li class="required">Campos obrigatórios!</li>
+    }
+
+    @if (!email.includes('@') || email.length < 6) {
+        <li class="required">e-mail inválido!</li>
+    }
+
+    @if (email === emailEsperado && senha === senhaEsperada) {
+        <li class="required">Credencial validada! Bem-vindo (a)!</li>
+    } @else {
+        <li class="required">Credenciais incorretas!</li>
+    }
+</div>
+
+
+<h2>Exercicio 9: Lista de Produtos com condicionais</h2>
+
+<div>
+    <ul>
+        @for (p of produtos; track p.nome) {
+            <li [ngClass]="p.promocao ? 'promocao' : ''">
+                {{p.nome}} - {{p.preco}} - {{p.promocao}}
+            </li>
+        } @empty {
+            <li>Nenhum produto cadastrado!</li>
+        }
+    </ul>
+</div>
+
+
+<h2>Exercicio 10: Switch - Calculadora Simples</h2>
+
+
+
+<div>
+    <label for="operacao">Escolha a operação:</label>
+    <select [(ngModel)]="operacaoSelecionada" id="operacao">
+      <option value="soma">Soma</option>
+      <option value="sub">Subtração</option>
+      <option value="multi">Multiplicação</option>
+      <option value="divi">Divisão</option>
+    </select>
+  
+    <input type="number" [(ngModel)]="valor1" placeholder="Valor 1" />
+    <input type="number" [(ngModel)]="valor2" placeholder="Valor 2" />
+  
+    <button (click)="calcular()">Calcular</button>
+  
+    <p>Resultado: {{ resultado }}</p>
+  </div>
+
+
+
+
+
