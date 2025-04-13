@@ -1,0 +1,38 @@
+<h2>Exercicio 5: Switch - múltiplos cases</h2>
+
+<div>
+    <select name="selecting" id="sel" [(ngModel)]="status">
+        <option value="pendente">Pendente</option>
+        <option value="enviado">Enviado</option>
+        <option value="entregue">Entregue</option>
+      </select>
+    
+    
+    @switch (status) {
+        @case ('pendente') {
+            <p>Aguardando confirmação</p>
+        }
+        @case ('enviado') {
+            <p>Pedido a caminho</p>
+        }
+        @case ('entregue') {
+            <p>Pedido entregue!</p>
+        }
+
+        @default {
+            <p>Status desconhecido</p>
+        }
+    }
+</div>
+
+
+<h2>Exercicio 6: For - percorrendo objetos</h2>
+
+<div>
+    @for (x of usuarios; track x.nome) {
+        <p>{{ x.nome }} - {{ x.idade }} anos</p>
+    }
+    @empty {
+        <p>Nenhum usuário encontrado.</p>
+    }
+</div>

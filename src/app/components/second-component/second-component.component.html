@@ -1,0 +1,27 @@
+<h2>Exercicio 3: If/Else - acesso permitido ou negado</h2>
+
+
+<input type="number" [(ngModel)]="idade" placeholder="Digite a sua idade" />
+
+<div>
+    @if (idade >= 18) {
+    <p>Acesso permitido</p>
+    } @else {
+    <p>Acesso negado</p>
+    }
+</div>
+
+
+<h2>Exercicio 4: For - percorrendo por listas com ações dinâmicas</h2>
+
+<div>
+
+    <ul>
+        @for (x of tarefas; track $index) {
+        <li>{{x}}</li>
+        <button class="btn" (click)="removeTask(x)">Remover</button>
+        } @empty {
+        <li>Nenhuma tarefa pendente</li>
+        }
+    </ul>
+</div>

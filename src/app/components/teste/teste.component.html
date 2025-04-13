@@ -1,7 +1,31 @@
+<h2>Exercicio 1: Uso básico do Switch, input dinâmico com mês</h2>
+
+<div>
+  <input type="number" [(ngModel)]="mes" placeholder="Digite o número do mês" />
+
+  @switch (mes) {
+    @case (1) {
+      <p>Janeiro</p>
+    }
+    @case (2) {
+      <p>Fevereiro</p>
+    }
+    @default {
+      <p>Inválido!</p>
+    }
+  }
+</div>
+
+
+
+<h2>Exercicio 2: Lista Dinâmica com for</h2>
+
 <ul>
   <li>
     @for (item of itens; track $index) {
       {{item}}
+    } @empty {
+      <p>A lista está vazia!</p>
     }
   </li>
 </ul>
