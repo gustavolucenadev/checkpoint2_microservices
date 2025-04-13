@@ -51,4 +51,9 @@ Simples calculadora com operações básicas (`soma`, `subtração`, etc.) e exi
 
 ### Angular Diretivas: @if, @switch, @for, @empty
 
+![Imagem 1](./angular-pt1.jpg)
+![Imagem 1](./angular-pt2.jpg)
+
+
+
 
